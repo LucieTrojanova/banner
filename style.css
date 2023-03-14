@@ -2,6 +2,7 @@
 html {
   box-sizing: border-box;
 }
+
 *,
 ::after,
 ::before {
@@ -23,7 +24,16 @@ body {
 
 .banner {
   background-color: #e74c3c;
+  display: none;
+
 }
+
+@media(min-width:800px) {
+  .banner {
+    display: inherit;
+  }
+}
+
 .obdelnik {
   background-color: #2ecc71;
 }
